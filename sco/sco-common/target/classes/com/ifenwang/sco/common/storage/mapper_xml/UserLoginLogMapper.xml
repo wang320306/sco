@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ifenwang.sco.common.storage.mapper.UserLoginLogMapper">
+	
+	<insert id="save" parameterType="UserLoginLog">
+		insert into TL_USERLOGINLOG (
+			<!-- LOGID, --> 
+			USERID, 
+			LOGINTIME, 
+			IPADDRESS, 
+			USERAGENT,
+			LOGINTYPE)
+		values (
+			<!-- #{logId,		jdbcType=VARCHAR},  -->
+			#{userId,		jdbcType=VARCHAR},
+			#{loginTime,	jdbcType=DATE},
+			#{ipAddress,	jdbcType=VARCHAR},
+			#{userAgent,	jdbcType=VARCHAR},
+			#{loginType,	jdbcType=VARCHAR})
+	</insert>
+	
+</mapper>
