@@ -86,10 +86,10 @@
   </prerequisites>
   -->
    
-  <modules>
+  <!-- <modules>
 	<module>sco-common</module>
 	<module>sco-portal</module>
-  </modules>
+  </modules> -->
 
   <!--  
   <scm>
@@ -689,4 +689,10 @@
   </reporting>
   -->
 
+  <modules>
+  	<module>sco-portal</module>
+  	<module>sco-utils</module>
+  	<module>sco-base</module>
+  	<module>sco-manager</module>
+  </modules>
 </project>

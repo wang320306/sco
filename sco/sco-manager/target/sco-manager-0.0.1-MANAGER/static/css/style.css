@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+
+/* NAV
+-------------------------------------------------------------------------------*/
+nav.navbar {
+	margin-bottom: 0px;
+	min-height: 40px;
+	border: none;
+}
+
+.navbar-inverse {
+	background-color: #2e5dac;
+}
+
+.navbar-fixed-top {
+	z-index: 1030;
+	top: 0;
+}
+
+.navbar .leftmenu-trigger {
+	border-right: 1px solid #254a8a;
+}
+
+.leftmenu-trigger {
+	background-position: 0 0;
+	float: left;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjI5OTJEN0UxMDdFMTFFMzk1QjZBODRFMTJGRERFNzMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjI5OTJEN0QxMDdFMTFFMzk1QjZBODRFMTJGRERFNzMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmRpZDo4QzE3NEM1ODdCMTBFMzExQTBDOEVEREIyRENFMUU0QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QzE3NEM1ODdCMTBFMzExQTBDOEVEREIyRENFMUU0QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmxMBE8AAADNSURBVHja7NpBCoAwDARAIz7cn9cvaGhqW2bPCnEwSxGjtXZIPicCgAABAhSAAAECFIAAAQIUgADXyZW45+583aiUzB0+qFphgDpw7P1TzacDrTBAHTjxmbB8Vh1ohQECBCgAAQIEKAABAgQoAAECBCgAAQIEKAABAgQoAAECBCgAAU6YzP+Bb/+Hi8metWTuDGAs+rKEFdaBOvBLl/xVAUPn27EDwwrrQB3Yu2P+WvvyWXc/B4YV1oEABSBAgAAFIECAAAUgQIA75RFgAGBMGKmai6EfAAAAAElFTkSuQmCC);
+}
+
+.leftmenu-trigger:hover {
+	background-position: 0 40px;
+}
+
+.navbar .logo {
+	cursor: pointer;
+	padding-left: 20px;
+    padding-top: 8px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .logo:hover, 
+.navbar .logo:focus {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+.toolbar.navbar-nav {
+  	margin: 0;
+}
+
+.navbar-nav .dropdown-toggle {
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	font-size: 14px;
+}
+
+a.username {
+  	padding: 8px 10px !important;
+  	font-size: 12px !important;
+}
+
+a.username:before,
+a.username:after {
+  	content: " ";
+  	display: table;
+}
+
+a.username:after {
+  	clear: both;
+}
+
+a.username span {
+  padding-right: 10px;
+  top: 2px;
+  position: relative;
+  float: left;
+}
+
+a.username img {
+  height: 24px;
+  width: 24px;
+  border-radius: 1px;
+}
+
+.dropdown-menu.userinfo .username a {
+  padding: 0;
+  color: #4d4d4d;
+}
+
+.dropdown-menu.userinfo .username a:before,
+.dropdown-menu.userinfo .username a:after {
+  content: " ";
+  display: table;
+}
+.dropdown-menu.userinfo .username a:after {
+  clear: both;
+}
+.dropdown-menu.userinfo .username a:before,
+.dropdown-menu.userinfo .username a:after {
+  content: " ";
+  display: table;
+}
+.dropdown-menu.userinfo .username a:after {
+  clear: both;
+}
+.dropdown-menu.userinfo .username a:hover {
+  text-decoration: none;
+  background: none;
+}
+
+
+/* RESPONSIVE
+-------------------------------------------------------------------------------*/
+@media screen and (min-width: 480px) {
+}
+
+@media ( min-width : 480px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+	.navbar-fixed-top {
+		border-radius: 0;
+	}
+
+	.toolbar .dropdown {
+		border-left: 1px solid #254a8a
+	}
+}
+
+@media ( min-width : 768px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}

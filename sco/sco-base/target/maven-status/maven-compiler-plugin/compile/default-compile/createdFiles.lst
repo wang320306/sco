@@ -1,0 +1,17 @@
+com\ifenwang\sco\base\tablecache\TableCache.class
+com\ifenwang\sco\base\entity\SysDomain.class
+com\ifenwang\sco\base\common\DataTypeConstants.class
+com\ifenwang\sco\base\tablecache\TableCacheManager$CacheInfo.class
+com\ifenwang\sco\base\tablecache\tables\SysDomainCache.class
+com\ifenwang\sco\base\tablecache\TableCacheManager.class
+com\ifenwang\sco\base\entity\SysParam.class
+com\ifenwang\sco\base\service\Configuration$Global.class
+com\ifenwang\sco\base\tablecache\TableCacheManager$1.class
+com\ifenwang\sco\base\interceptor\ResultSetHandlerInterceptor.class
+com\ifenwang\sco\base\exception\SeverityException.class
+com\ifenwang\sco\base\service\ConfigurationService.class
+com\ifenwang\sco\base\mapper\SysParamMapper.class
+com\ifenwang\sco\base\interceptor\StatementHandlerInterceptor.class
+com\ifenwang\sco\base\mapper\SysDomainMapper.class
+com\ifenwang\sco\base\service\Configuration.class
+com\ifenwang\sco\base\common\BaseEntity.class

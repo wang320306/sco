@@ -1,0 +1,14 @@
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\tablecache\tables\SysDomainCache.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\common\BaseEntity.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\tablecache\TableCache.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\entity\SysDomain.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\exception\SeverityException.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\mapper\SysDomainMapper.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\common\DataTypeConstants.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\mapper\SysParamMapper.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\service\Configuration.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\interceptor\StatementHandlerInterceptor.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\service\ConfigurationService.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\interceptor\ResultSetHandlerInterceptor.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\entity\SysParam.java
+D:\workspace-64\SCO\sco\sco-base\src\main\java\com\ifenwang\sco\base\tablecache\TableCacheManager.java

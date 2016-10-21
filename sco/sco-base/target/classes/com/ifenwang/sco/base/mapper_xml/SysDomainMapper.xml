@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ifenwang.sco.base.mapper.SysDomainMapper">
+
+	<sql id="columns">
+		TABLENAME,
+		FIELDNAME,
+		DOMAIN,
+		NOTES
+	</sql>
+
+	<insert id="save" parameterType="SysDomain">
+		insert into TD_SYSDOMAIN (
+			TABLENAME, 
+			FIELDNAME, 
+			DOMAIN, 
+			NOTES)
+		values (
+			#{tableName, jdbcType=VARCHAR}, 
+			#{fieldName, jdbcType=VARCHAR},
+			#{domain, jdbcType=VARCHAR},
+			#{notes, jdbcType=VARCHAR})
+	</insert>
+	
+	<update id="update" parameterType="SysDomain">
+		UPDATE TD_SYSDOMAIN
+		<set>
+			NOTES = #{notes, jdbcType=VARCHAR}
+		</set>
+		<where>
+			AND TABLENAME = #{tableName, jdbcType=VARCHAR}
+			AND FIELDNAME = #{fieldName, jdbcType=VARCHAR}
+			AND DOMAIN = #{domain, jdbcType=VARCHAR}
+		</where>
+	</update>
+	
+	<delete id="delete" parameterType="SysDomain">
+		DELETE FROM TD_SYSDOMAIN
+		<where>
+			AND TABLENAME = #{tableName, jdbcType=VARCHAR}
+			AND FIELDNAME = #{fieldName, jdbcType=VARCHAR}
+			AND DOMAIN = #{domain, jdbcType=VARCHAR}
+		</where>
+	</delete>
+
+	<select id="queryListByMap" parameterType="map" resultType="SysDomain">
+		SELECT <include refid="columns"/> FROM TD_SYSDOMAIN T
+		<where>
+			<if test="tableName != null">
+				AND TABLENAME = #{tableName, jdbcType=VARCHAR}
+			</if>
+			<if test="fieldName != null">
+				AND FIELDNAME = #{fieldName, jdbcType=VARCHAR}
+			</if>
+			<if test="domain != null">
+				AND DOMAIN = #{domain, jdbcType=VARCHAR}
+			</if>
+		</where>
+	</select>
+		
+	<select id="queryCountByMultiple" parameterType="map" resultType="int">
+		SELECT COUNT(1) FROM TD_SYSDOMAIN
+		<where>
+			<if test="tableName != null">
+				AND TABLENAME LIKE '%' || #{tableName, jdbcType=VARCHAR} || '%'
+			</if>
+			<if test="fieldName != null">
+				AND FIELDNAME LIKE '%' || #{fieldName, jdbcType=VARCHAR} || '%'
+			</if>
+			<if test="domain != null">
+				AND DOMAIN LIKE '%' || #{domain, jdbcType=VARCHAR} || '%'
+			</if>
+		</where>
+	</select>
+	
+	<select id="queryByMultiple" parameterType="map" resultType="SysDomain">
+		SELECT <include refid="columns"/> FROM TD_SYSDOMAIN T
+		<where>
+			<if test="tableName != null">
+				AND TABLENAME LIKE '%' || #{tableName, jdbcType=VARCHAR} || '%'
+			</if>
+			<if test="fieldName != null">
+				AND FIELDNAME LIKE '%' || #{fieldName, jdbcType=VARCHAR} || '%'
+			</if>
+			<if test="domain != null">
+				AND DOMAIN LIKE '%' || #{domain, jdbcType=VARCHAR} || '%'
+			</if>
+		</where>
+	</select>
+
+</mapper> 

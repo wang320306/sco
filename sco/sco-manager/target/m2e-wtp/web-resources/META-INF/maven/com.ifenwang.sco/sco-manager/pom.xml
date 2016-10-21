@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ifenwang.sco</groupId>
+    <artifactId>sco</artifactId>
+    <version>0.0.1-SCO</version>
+  </parent>
+  <artifactId>sco-manager</artifactId>
+  <version>0.0.1-MANAGER</version>
+  <packaging>war</packaging>
+  
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>com.ifenwang.sco</groupId>
+  		<artifactId>sco-base</artifactId>
+  		<version>0.0.1-BASE</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.ifenwang.sco</groupId>
+  		<artifactId>sco-utils</artifactId>
+  		<version>0.0.1-UTILS</version>
+  	</dependency>
+  </dependencies>
+</project>
